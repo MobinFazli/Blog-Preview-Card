@@ -1,0 +1,106 @@
+body {
+    background-color: greenyellow;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-wrap: wrap; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: linear-gradient(to bottom, #247c05, #006248, #004354, #002437, #070707);
+    color: white;
+}
+
+.container {
+    width: calc(100% - 20px); 
+    max-width: 330px; 
+    min-width: 280px; 
+    text-align: left;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid white;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0.5);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    margin-right: 15px;
+    margin-bottom: 15px; 
+    transition: transform 0.2s ease;
+    background-image: linear-gradient(to bottom, #247c05, #006248, #004354, #002437, #070707);
+}
+
+.container:hover {
+    transform: scale(1.1); 
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: calc(50% - 20px); 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: calc(50% - 20px); 
+    }
+}
+
+.cover {
+    max-width: 100%; 
+    height: auto;
+    display: block;
+    border-radius: 10px; 
+    margin-bottom: 15px; 
+}
+
+.category button {
+    background-color: yellowgreen;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.category a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.category button:hover{
+    background-color: white;
+}
+
+.date {
+    margin-top: 10px;
+    font-size: small;
+    font-weight: bolder;
+}
+
+.content {
+    font-size: 15px;
+    color: rgb(176, 172, 172);
+}
+
+.publisher {
+    display: flex;
+    margin-top: 50px;
+}
+
+.publisher img {
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.publisher span {
+    margin-top: 15px;
+    padding-left: 5px;
+    font-size: small;
+    font-weight: bolder;
+}
